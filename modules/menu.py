@@ -116,7 +116,7 @@ class main:
             if os.path.exists(system.home+"/Dig-Up"):
               pass
             else:
-              os.system(system.sudo+" git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Dig-Up")
+              os.system(system.sudo+" git clone https://github.com/hritikmunde/Dig-Up.git "+system.home+"/Dig-Up")
             if os.path.exists(system.home+"/Dig-Up/install.aex"):
               os.system("cd "+system.home+"/Dig-Up && "+system.sudo+" sh install.aex")
               if os.path.exists(system.bin+"/Dig-Up") and os.path.exists(system.conf_dir+"/Dig-Up"):
@@ -135,7 +135,7 @@ class main:
             if os.path.exists(system.home+"/Dig-Up"):
               pass
             else:
-              os.system("git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Dig-Up")
+              os.system("git clone https://github.com/hritikmunde/Dig-Up.git "+system.home+"/Dig-Up")
             if os.path.exists(system.home+"/Dig-Up/install.aex"):
               os.system("cd "+system.home+"/Dig-Up && sh install.aex")
               if os.path.exists(system.bin+"/Dig-Up") and os.path.exists(system.conf_dir+"/Dig-Up"):
