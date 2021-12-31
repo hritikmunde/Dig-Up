@@ -1,0 +1,22 @@
+# Tool Name :- Dig-Up
+# Created By :- Jatan Patel
+                Umesh Patil
+                Srushti Naikare
+                Mugdha Kamble
+                Hritik Munde
+# Date :- 17/12/2021
+
+if [ -d /data/data/com.termux/files/usr/etc ]; then
+  conf_dir="/data/data/com.termux/files/usr/etc"
+elif [ -d /usr/etc ]; then
+  conf_dir="/usr/etc"
+elif [ -d /etc ]; then
+  conf_dir="/etc"
+fi
+
+if [ -e /usr/lib/sudo ]; then
+	sudo python3 $conf_dir/Dig-Up/Dig-Up.py
+else
+	python3 $conf_dir/Dig-Up/Dig-Up.py
+fi
+exit
